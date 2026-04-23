@@ -51,7 +51,7 @@ export function CtaFinal() {
             <p className="mt-2 text-sm font-semibold text-[#333333]">
               *Frete calculado no checkout
             </p>
-            <PurchaseButtonWithTooltip href="#" block>
+            <PurchaseButtonWithTooltip href="#" block variant="physical">
               Livro Físico
             </PurchaseButtonWithTooltip>
           </div>
@@ -80,7 +80,7 @@ export function CtaFinal() {
               Ebook — Acesso imediato após a compra · Leia em qualquer dispositivo
             </p>
             <p className="mt-6 text-4xl font-black text-primary">R$ 29,90</p>
-            <PurchaseButtonWithTooltip href="#" block>
+            <PurchaseButtonWithTooltip href="#" block variant="ebook">
               Ebook
             </PurchaseButtonWithTooltip>
           </div>

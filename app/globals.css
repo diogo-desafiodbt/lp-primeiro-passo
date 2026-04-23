@@ -22,7 +22,7 @@
 
 @layer components {
   .btn-primary {
-    @apply inline-flex min-h-[56px] items-center justify-center rounded-md bg-primary px-7 py-4 text-center text-lg font-bold uppercase tracking-[0.05em] text-white transition-all duration-200 hover:bg-primary-dark;
+    @apply inline-flex min-h-[56px] items-center justify-center rounded-md bg-primary px-7 py-4 text-center text-lg font-bold uppercase tracking-[0.05em] text-white transition-all duration-200 ease-in-out hover:bg-[#c8001a];
   }
 
   .btn-primary-full {

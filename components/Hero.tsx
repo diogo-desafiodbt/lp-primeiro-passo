@@ -9,13 +9,13 @@ import { PurchaseButtonWithTooltip } from "@/components/PurchaseButtonWithToolti
 export function Hero() {
   return (
     <section
-      className="relative px-4 pb-[60px] pt-12 md:px-6 md:pt-20"
+      className="relative px-8 pb-[60px] pt-12 md:px-16 md:pt-20"
       style={{
         background:
           "linear-gradient(135deg, #a30000 0%, #f4001e 50%, #ff6666 100%)",
       }}
     >
-      <div className="relative z-10 mx-auto grid max-w-6xl grid-cols-1 items-stretch gap-8 md:grid-cols-2 md:gap-12">
+      <div className="relative z-10 mx-auto grid max-w-6xl grid-cols-1 items-stretch gap-8 md:grid-cols-2 md:gap-16">
         {/* Coluna texto */}
         <div className="order-1 flex flex-col md:order-none">
           <span className="mb-4 inline-flex w-fit items-center rounded-md bg-white px-3 py-1 text-sm font-bold uppercase tracking-wide text-primary sm:text-base">
@@ -31,37 +31,15 @@ export function Hero() {
           </p>
           <div className="mt-6 flex flex-col gap-4 md:mt-8 md:flex-row md:flex-wrap">
             <div className="w-full md:min-w-0 md:flex-1">
-              <PurchaseButtonWithTooltip href="#comprar">
+              <PurchaseButtonWithTooltip href="#comprar" variant="physical">
                 Livro Físico
               </PurchaseButtonWithTooltip>
             </div>
             <div className="w-full md:min-w-0 md:flex-1">
-              <PurchaseButtonWithTooltip href="#comprar">
+              <PurchaseButtonWithTooltip href="#comprar" variant="ebook">
                 Ebook
               </PurchaseButtonWithTooltip>
             </div>
-          </div>
-          <div className="mt-6 flex flex-col items-start gap-1 text-white">
-            <span className="text-base font-semibold tracking-wide">
-              Role para baixo
-            </span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              className="animate-bounce"
-              aria-hidden
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M19 9l-7 7-7-7"
-              />
-            </svg>
           </div>
         </div>
 

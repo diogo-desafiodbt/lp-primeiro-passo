@@ -1,5 +1,3 @@
-import { PurchaseButtonWithTooltip } from "@/components/PurchaseButtonWithTooltip";
-
 /* -------------------------------------------------------------------------- */
 /* Cardápio bônus — 21 dias no livro                                          */
 /* -------------------------------------------------------------------------- */
@@ -24,8 +22,8 @@ const highlights = [
 
 export function CardapioBonus() {
   return (
-    <section className="bg-[#a30000]">
-      {/* Onda Numbers (#13244f) → Cardápio (#a30000) — curva mais alta e suave */}
+    <section className="bg-white">
+      {/* Onda Numbers (#13244f) → Cardápio (#ffffff) — curva mais alta e suave */}
       <div className="pointer-events-none w-full overflow-hidden leading-none">
         <svg
           viewBox="0 0 1440 88"
@@ -43,7 +41,7 @@ export function CardapioBonus() {
               y2="1"
             >
               <stop offset="0%" stopColor="#13244f" />
-              <stop offset="100%" stopColor="#a30000" />
+              <stop offset="100%" stopColor="#ffffff" />
             </linearGradient>
           </defs>
           <path
@@ -54,13 +52,16 @@ export function CardapioBonus() {
       </div>
 
       <div className="mx-auto max-w-5xl px-4 pb-14 pt-8 text-center md:px-6 md:pb-20 md:pt-10">
-        <p className="text-4xl text-white md:text-5xl" aria-hidden>
+        <p className="text-4xl text-[#13244f] md:text-5xl" aria-hidden>
           🍳
         </p>
-        <h2 className="mt-4 font-impact text-2xl font-bold uppercase leading-tight text-white md:text-4xl">
+        <p className="mx-auto mt-4 inline-flex rounded-full bg-[#13244f] px-4 py-1.5 text-sm font-bold uppercase tracking-wide text-white">
+          🎁 Incluso no livro
+        </p>
+        <h2 className="mt-4 font-impact text-2xl font-bold uppercase leading-tight text-[#13244f] md:text-4xl">
           BÔNUS EXCLUSIVO NO LIVRO
         </h2>
-        <p className="mx-auto mt-6 max-w-3xl text-xl font-bold leading-snug text-white md:text-3xl">
+        <p className="mx-auto mt-6 max-w-3xl text-xl font-bold leading-snug text-[#13244f] md:text-3xl">
           Cardápio completo de 21 dias — café da manhã, almoço e jantar — para
           você saber exatamente o que colocar no prato, sem adivinhar.
         </p>
@@ -68,7 +69,7 @@ export function CardapioBonus() {
           {highlights.map((item) => (
             <div
               key={item.title}
-              className="rounded-2xl border border-white/30 bg-white/90 px-5 py-8 text-center shadow-lg backdrop-blur-sm"
+              className="rounded-2xl border border-[#d8d8d8] bg-[#ececec] px-5 py-8 text-center shadow-lg"
             >
               <p className="text-5xl md:text-6xl" aria-hidden>
                 {item.emoji}
@@ -76,25 +77,13 @@ export function CardapioBonus() {
               <h3 className="mt-4 text-lg font-black uppercase tracking-wide text-accent md:text-2xl">
                 {item.title}
               </h3>
-              <p className="mt-3 text-base font-semibold leading-relaxed text-[#1a1a1a] md:text-lg">
+              <p className="mt-3 text-base font-semibold leading-relaxed text-[#333333] md:text-lg">
                 {item.text}
               </p>
             </div>
           ))}
         </div>
 
-        <div className="mx-auto mt-12 flex max-w-lg flex-col items-stretch justify-center gap-4 sm:flex-row sm:items-center sm:gap-6">
-          <div className="w-full sm:flex-1">
-            <PurchaseButtonWithTooltip href="#comprar">
-              Livro Físico
-            </PurchaseButtonWithTooltip>
-          </div>
-          <div className="w-full sm:flex-1">
-            <PurchaseButtonWithTooltip href="#comprar">
-              Ebook
-            </PurchaseButtonWithTooltip>
-          </div>
-        </div>
       </div>
     </section>
   );

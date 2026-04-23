@@ -2,46 +2,34 @@ import Link from "next/link";
 import type { ReactNode } from "react";
 
 /* -------------------------------------------------------------------------- */
-/* Botão de compra + dica sempre visível (Hero, CtaBar, CtaFinal, Cardapio)   */
+/* Botão de compra (Livro Físico / Ebook)                                      */
 /* -------------------------------------------------------------------------- */
 
-/** Sem fundo nem sombra — só o texto sobre o fundo da área (cards brancos: texto escuro). */
-function tooltipClassName(block: boolean) {
-  const tone = block ? "text-[#13244f]" : "text-white";
-  return `w-full max-w-full text-center text-[18px] font-bold leading-snug ${tone}`;
-}
+type PurchaseVariant = "physical" | "ebook";
 
 type Props = {
   href: string;
   children: ReactNode;
   /** Largura total + margem superior (botões dos cards CTA final) */
   block?: boolean;
-  /**
-   * `red` = seção com fundo vermelho → botão azul escuro para contraste.
-   * `blue` = seção com fundo azul escuro → botão vermelho (CtaBar).
-   */
-  sectionTone?: "red" | "blue";
+  variant: PurchaseVariant;
 };
 
 export function PurchaseButtonWithTooltip({
   href,
   children,
   block,
-  sectionTone = "red",
+  variant,
 }: Props) {
-  const isOnBlueSection = sectionTone === "blue";
-
-  const linkClass = isOnBlueSection
-    ? "inline-flex min-h-[56px] w-full items-center justify-center rounded-full bg-[#f4001e] px-12 py-3 text-center text-lg font-bold uppercase tracking-wide text-white shadow-[0_4px_20px_rgba(244,0,30,0.5)] transition-colors hover:bg-[#c8001a] hover:shadow-[0_4px_24px_rgba(200,0,26,0.45)]"
-    : "inline-flex min-h-[56px] w-full items-center justify-center rounded-full bg-[#13244f] px-12 py-3 text-center text-lg font-bold uppercase tracking-wide text-white shadow-[0_4px_20px_rgba(19,36,79,0.5)] transition-colors hover:bg-[#1e3a8a] hover:shadow-[0_4px_24px_rgba(30,58,138,0.45)]";
+  const linkClass =
+    variant === "physical"
+      ? "inline-flex min-h-[56px] w-full items-center justify-center rounded-full border-[3px] border-[#c0c0c0] bg-gradient-to-b from-white to-[#F5F5F5] px-12 py-3 text-center text-lg font-bold uppercase tracking-wide text-[#13244f] shadow-[0_4px_12px_rgba(0,0,0,0.15)] transition-all duration-200 ease-in-out hover:-translate-y-[2px] hover:border-[#999999] hover:bg-[#e8e8e8] hover:shadow-[0_6px_20px_rgba(0,0,0,0.2)]"
+      : "inline-flex min-h-[56px] w-full items-center justify-center rounded-full border-[3px] border-[#0a1a3a] bg-gradient-to-b from-[#13244f] to-[#1a3060] px-12 py-3 text-center text-lg font-bold uppercase tracking-wide text-white shadow-[0_4px_12px_rgba(0,0,0,0.15)] transition-all duration-200 ease-in-out hover:-translate-y-[2px] hover:border-[#0a1530] hover:from-[#1e3875] hover:to-[#1e3875] hover:shadow-[0_6px_20px_rgba(0,0,0,0.2)]";
 
   return (
     <div
-      className={`flex flex-col items-center gap-2 ${block ? "mt-8 w-full" : "w-full md:w-auto"}`}
+      className={`flex flex-col items-center ${block ? "mt-8 w-full" : "w-full md:w-auto"}`}
     >
-      <div className={tooltipClassName(!!block)}>
-        👇 Clique abaixo para comprar
-      </div>
       <Link
         href={href}
         className={`${linkClass} ${block ? "" : "md:w-auto"}`}

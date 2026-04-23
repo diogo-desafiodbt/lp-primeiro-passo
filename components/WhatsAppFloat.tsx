@@ -14,7 +14,7 @@ export function WhatsAppFloat() {
       <span className="hidden whitespace-nowrap rounded-lg border border-black/10 bg-white px-3 py-2 text-center text-sm font-bold leading-tight text-[#1a1a1a] shadow-md md:inline-block">
         Falar no WhatsApp
       </span>
-      <span className="flex h-16 w-16 shrink-0 animate-pulse items-center justify-center rounded-full bg-[#25D366] text-white shadow-[0_4px_18px_rgba(37,211,102,0.55)] transition-colors group-hover:animate-none group-hover:bg-[#1ebe57]">
+      <span className="flex h-16 w-16 shrink-0 animate-pulse items-center justify-center rounded-full bg-[#25D366] text-white shadow-[0_4px_18px_rgba(37,211,102,0.55)] transition-all duration-200 ease-in-out group-hover:scale-110 group-hover:animate-none group-hover:bg-[#1da851]">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="32"

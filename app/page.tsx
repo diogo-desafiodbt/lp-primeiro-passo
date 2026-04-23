@@ -8,7 +8,6 @@ import { Hero } from "@/components/Hero";
 import { Navbar } from "@/components/Navbar";
 import { CardapioBonus } from "@/components/CardapioBonus";
 import { Numbers } from "@/components/Numbers";
-import { Problem } from "@/components/Problem";
 import { Testimonials } from "@/components/Testimonials";
 import { WhatYouLearn } from "@/components/WhatYouLearn";
 import { WhatsAppFloat } from "@/components/WhatsAppFloat";
@@ -21,7 +20,6 @@ export default function Home() {
       <Hero />
       <Numbers />
       <CardapioBonus />
-      <Problem />
       <CtaBar />
       <Book />
       <WhatYouLearn />
