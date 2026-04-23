@@ -53,14 +53,14 @@ export function CardapioBonus() {
         </svg>
       </div>
 
-      <div className="mx-auto max-w-5xl px-6 pb-16 pt-8 text-center md:pb-20 md:pt-10">
+      <div className="mx-auto max-w-5xl px-4 pb-14 pt-8 text-center md:px-6 md:pb-20 md:pt-10">
         <p className="text-4xl text-white md:text-5xl" aria-hidden>
           🍳
         </p>
-        <h2 className="mt-4 font-impact text-3xl font-bold uppercase leading-tight text-white md:text-4xl">
+        <h2 className="mt-4 font-impact text-2xl font-bold uppercase leading-tight text-white md:text-4xl">
           BÔNUS EXCLUSIVO NO LIVRO
         </h2>
-        <p className="mx-auto mt-6 max-w-3xl text-2xl font-bold leading-snug text-white md:text-3xl">
+        <p className="mx-auto mt-6 max-w-3xl text-xl font-bold leading-snug text-white md:text-3xl">
           Cardápio completo de 21 dias — café da manhã, almoço e jantar — para
           você saber exatamente o que colocar no prato, sem adivinhar.
         </p>
@@ -73,10 +73,10 @@ export function CardapioBonus() {
               <p className="text-5xl md:text-6xl" aria-hidden>
                 {item.emoji}
               </p>
-              <h3 className="mt-4 text-xl font-black uppercase tracking-wide text-accent md:text-2xl">
+              <h3 className="mt-4 text-lg font-black uppercase tracking-wide text-accent md:text-2xl">
                 {item.title}
               </h3>
-              <p className="mt-3 text-lg font-semibold leading-relaxed text-[#1a1a1a]">
+              <p className="mt-3 text-base font-semibold leading-relaxed text-[#1a1a1a] md:text-lg">
                 {item.text}
               </p>
             </div>

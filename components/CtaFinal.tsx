@@ -10,16 +10,16 @@ export function CtaFinal() {
   return (
     <section
       id="comprar"
-      className="px-6 py-16"
+      className="px-4 py-14 md:px-6 md:py-16"
       style={{
         background: "linear-gradient(135deg, #a30000 0%, #f4001e 100%)",
       }}
     >
       <div className="mx-auto max-w-4xl text-center">
-        <h2 className="text-2xl font-bold uppercase text-white md:text-3xl">
+        <h2 className="text-xl font-bold uppercase text-white md:text-3xl">
           ESCOLHA COMO VOCÊ QUER DAR O PRIMEIRO PASSO
         </h2>
-        <p className="mt-4 text-xl font-semibold text-white">
+        <p className="mt-4 text-lg font-semibold text-white md:text-xl">
           O conteúdo é o mesmo. O formato é a sua escolha.
         </p>
         <div className="mx-auto my-6 h-px w-16 bg-white/80" aria-hidden />

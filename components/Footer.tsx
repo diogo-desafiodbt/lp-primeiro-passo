@@ -20,9 +20,9 @@ export function Footer() {
         <p className="mt-6 text-lg font-semibold text-white">
           Desafio Diabetes · A ciência da reversão do diabetes.
         </p>
-        <p className="mt-2 text-lg font-semibold text-white">
+        <p className="mt-2 flex w-full max-w-full flex-wrap items-center justify-center gap-x-2 text-center text-base font-semibold text-white break-words md:text-lg">
           <a
-            className="text-primary-light hover:underline"
+            className="break-words text-primary-light hover:underline"
             href="https://instagram.com/desafiodiabetesbr"
             target="_blank"
             rel="noreferrer"
@@ -31,7 +31,7 @@ export function Footer() {
           </a>
           <span className="mx-2 font-semibold text-white">·</span>
           <a
-            className="text-primary-light hover:underline"
+            className="break-words text-primary-light hover:underline"
             href="https://instagram.com/drturisouza"
             target="_blank"
             rel="noreferrer"
@@ -40,7 +40,7 @@ export function Footer() {
           </a>
           <span className="mx-2 font-semibold text-white">·</span>
           <a
-            className="text-primary-light hover:underline"
+            className="break-words text-primary-light hover:underline"
             href="https://desafiodiabetes.com.br"
             target="_blank"
             rel="noreferrer"

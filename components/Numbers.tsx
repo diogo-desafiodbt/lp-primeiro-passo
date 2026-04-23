@@ -11,7 +11,7 @@ const stats = [
 
 export function Numbers() {
   return (
-    <section className="bg-accent px-6 py-16">
+    <section className="bg-accent px-4 py-12 md:px-6 md:py-16">
       <div className="mx-auto max-w-6xl">
         <div className="grid grid-cols-2 gap-y-10 md:grid-cols-4 md:gap-y-8">
           {stats.map((item, index) => (
@@ -23,8 +23,8 @@ export function Numbers() {
                 index === stats.length - 1 ? "md:border-r-0" : "",
               ].join(" ")}
             >
-              <span className="text-5xl font-black text-primary">{item.value}</span>
-              <span className="mt-1 text-lg font-bold text-white">{item.label}</span>
+              <span className="text-3xl font-black text-primary md:text-5xl">{item.value}</span>
+              <span className="mt-1 text-base font-bold text-white md:text-lg">{item.label}</span>
             </div>
           ))}
         </div>

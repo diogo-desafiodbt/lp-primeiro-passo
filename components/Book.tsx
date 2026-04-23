@@ -19,15 +19,15 @@ const pillars = [
 
 export function Book() {
   return (
-    <section className="bg-white px-6 py-20">
-      <div className="mx-auto grid max-w-6xl grid-cols-1 items-center gap-12 md:grid-cols-2">
+    <section className="bg-white px-4 py-14 md:px-6 md:py-20">
+      <div className="mx-auto grid max-w-6xl grid-cols-1 items-center gap-10 md:grid-cols-2 md:gap-12">
         <div className="flex w-full justify-center drop-shadow-2xl">
-          <div className="relative mx-auto h-[min(520px,75vh)] w-full max-w-[400px] min-h-[440px] sm:max-w-[440px]">
+          <div className="relative mx-auto h-[260px] w-full max-w-[220px] sm:h-[300px] sm:max-w-[260px] md:h-[min(520px,75vh)] md:max-w-[440px] md:min-h-[440px]">
             <Image
               src="/images/livro-fisico.png"
               alt="Livro O Primeiro Passo"
               fill
-              sizes="(max-width: 768px) 90vw, 440px"
+              sizes="(max-width: 768px) 260px, 440px"
               style={{ objectFit: "contain" }}
             />
           </div>

@@ -9,27 +9,27 @@ import { PurchaseButtonWithTooltip } from "@/components/PurchaseButtonWithToolti
 export function Hero() {
   return (
     <section
-      className="relative px-6 pb-[60px] pt-20"
+      className="relative px-4 pb-[60px] pt-12 md:px-6 md:pt-20"
       style={{
         background:
           "linear-gradient(135deg, #a30000 0%, #f4001e 50%, #ff6666 100%)",
       }}
     >
-      <div className="relative z-10 mx-auto grid max-w-6xl grid-cols-1 items-stretch gap-12 md:grid-cols-2">
+      <div className="relative z-10 mx-auto grid max-w-6xl grid-cols-1 items-stretch gap-8 md:grid-cols-2 md:gap-12">
         {/* Coluna texto */}
         <div className="order-1 flex flex-col md:order-none">
           <span className="mb-4 inline-flex w-fit items-center rounded-md bg-white px-3 py-1 text-sm font-bold uppercase tracking-wide text-primary sm:text-base">
             📖 O LIVRO DO DR. TURÍ SOUZA
           </span>
-          <h1 className="font-impact text-[2.2rem] font-bold uppercase leading-tight text-white md:text-[3.5rem]">
+          <h1 className="font-impact text-[1.9rem] font-bold uppercase leading-tight text-white md:text-[3.5rem]">
             O PRIMEIRO PASSO CONTRA O DIABETES
           </h1>
-          <p className="mt-5 text-xl font-semibold leading-[1.7] text-white">
+          <p className="mt-4 text-lg font-semibold leading-[1.6] text-white md:mt-5 md:text-xl md:leading-[1.7]">
             O guia prático do Dr. Turí Souza — o maior especialista do Brasil em
             diabetes — para quem quer mudar o metabolismo pela raiz, com ciência
             e sem complicação.
           </p>
-          <div className="mt-8 flex flex-col gap-4 md:flex-row md:flex-wrap">
+          <div className="mt-6 flex flex-col gap-4 md:mt-8 md:flex-row md:flex-wrap">
             <div className="w-full md:min-w-0 md:flex-1">
               <PurchaseButtonWithTooltip href="#comprar">
                 Livro Físico
@@ -66,8 +66,8 @@ export function Hero() {
         </div>
 
         {/* Coluna imagem — preenche a altura da linha da grelha */}
-        <div className="order-2 flex h-full min-h-[380px] w-full max-w-[600px] self-stretch md:order-none md:ml-auto md:mr-0 md:min-h-0">
-          <div className="relative h-full min-h-[380px] w-full flex-1 overflow-hidden rounded-2xl bg-transparent md:h-full md:min-h-0">
+        <div className="order-2 flex h-full min-h-[260px] w-full max-w-[600px] self-stretch md:order-none md:ml-auto md:mr-0 md:min-h-0">
+          <div className="relative h-[300px] w-full flex-1 overflow-hidden rounded-2xl bg-transparent md:h-full md:min-h-0">
             <Image
               src="/images/turi-hero.png"
               alt="Dr. Turí Souza"

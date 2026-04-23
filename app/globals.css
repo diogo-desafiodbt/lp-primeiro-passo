@@ -7,7 +7,10 @@
 /* -------------------------------------------------------------------------- */
 
 @layer base {
+  html,
   body {
+    overflow-x: hidden;
+    max-width: 100%;
     font-size: 20px;
     line-height: 1.8;
   }

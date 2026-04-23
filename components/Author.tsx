@@ -6,9 +6,9 @@ import Image from "next/image";
 
 export function Author() {
   return (
-    <section className="bg-accent px-6 py-20">
-      <div className="mx-auto grid max-w-6xl grid-cols-1 items-end gap-12 md:grid-cols-2">
-        <div className="relative w-full h-[500px] max-w-[420px] overflow-hidden rounded-2xl mx-auto md:mx-0">
+    <section className="bg-accent px-4 py-14 md:px-6 md:py-20">
+      <div className="mx-auto grid max-w-6xl grid-cols-1 items-end gap-10 md:grid-cols-2 md:gap-12">
+        <div className="relative mx-auto h-[320px] w-full max-w-[300px] overflow-hidden rounded-2xl md:mx-0 md:h-[500px] md:max-w-[420px]">
           <Image
             src="/images/turi-author.png"
             alt="Dr. Turí Souza"

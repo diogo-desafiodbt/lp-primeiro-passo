@@ -6,7 +6,7 @@ import { PurchaseButtonWithTooltip } from "@/components/PurchaseButtonWithToolti
 
 export function CtaBar() {
   return (
-    <section className="bg-accent px-6 py-10">
+    <section className="bg-accent px-4 py-10 md:px-6">
       <div className="mx-auto flex max-w-4xl flex-col items-stretch justify-center gap-4 md:flex-row md:flex-wrap md:items-center md:justify-center md:gap-6">
         <PurchaseButtonWithTooltip href="#comprar" sectionTone="blue">
           Livro Físico
